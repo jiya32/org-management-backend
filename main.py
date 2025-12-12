@@ -1,4 +1,3 @@
-# main.py
 import os
 import re
 from datetime import datetime, timedelta
@@ -14,6 +13,7 @@ from jose import jwt, JWTError
 
 load_dotenv()
 
+#.env file
 MONGO_URI = os.getenv("MONGO_URI")
 MASTER_DB = os.getenv("MASTER_DB", "master_db")
 JWT_SECRET = os.getenv("JWT_SECRET", "devsecret")
